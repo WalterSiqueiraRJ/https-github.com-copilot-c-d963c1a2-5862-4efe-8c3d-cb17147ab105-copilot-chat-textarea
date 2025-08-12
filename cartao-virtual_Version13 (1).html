@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Consultoria e Serviços WSS - Cartão Virtual</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --primary: #0077b6;
+      --secondary: #00b4d8;
+      --accent: #25d366;
+      --background: linear-gradient(135deg, #003366 70%, #00b4d8 100%);
+      --card-bg: #fffdfcfa;
+      --title: #0077b6;
+      --subtitle: #00b4d8;
+      --text: #2d465c;
+      --crt-bg: #e3f2fd;
+      --crt-color: #0077b6;
+      --shadow: 0 4px 24px #00336633;
+    }
+    body {
+      background: var(--background);
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .card {
+      background: var(--card-bg);
+      color: var(--text);
+      box-shadow: var(--shadow);
+      border-radius: 24px;
+      padding: 38px 28px 32px 28px;
+      max-width: 390px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      transition: box-shadow 0.2s;
+      animation: cardfade 0.9s;
+    }
+    @keyframes cardfade {
+      0% { opacity: 0; transform: scale(0.97) translateY(30px);}
+      100% { opacity: 1; transform: scale(1) translateY(0);}
+    }
+    .professor-img {
+      width: 84px;
+      height: 84px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 3px 14px #00b4d882;
+      margin: 0 auto 12px auto;
+      display: block;
+      background: #e3f2fd;
+      border: 3px solid var(--secondary);
+    }
+    h2 {
+      color: var(--title);
+      margin-bottom: 5px;
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 0;
+    }
+    .crt {
+      margin-bottom: 8px;
+      font-size: 1em;
+      color: var(--crt-color);
+      background: var(--crt-bg);
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    h3 {
+      font-size: 1.11em;
+      margin-bottom: 13px;
+      color: var(--subtitle);
+      letter-spacing: 1px;
+      font-weight: 600;
+      margin-top: 0;
+    }
+    .info {
+      margin: 16px 0 0 0;
+      font-size: 1.09em;
+      line-height: 1.7;
+      color: var(--text);
+      text-align: left;
+    }
+    .info ul {
+      padding-left: 1.2em;
+      margin: 0 0 0.8em 0;
+      text-align: left;
+    }
+    .info li {
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .info li b {
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .whatsapp-btn {
+      margin-top: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: #fff;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 13px 28px;
+      text-decoration: none;
+      font-size: 1.13em;
+      border: none;
+      box-shadow: 0 2px 14px 0 #25d36633;
+      transition: background 0.15s, transform 0.14s;
+      gap: 11px;
+    }
+    .whatsapp-btn:hover,
+    .whatsapp-btn:focus {
+      background: #128c7e;
+      color: #fff;
+      transform: scale(1.04);
+    }
+    .whatsapp-btn svg {
+      width: 1.35em;
+      height: 1.35em;
+      vertical-align: middle;
+    }
+    @media (max-width: 600px) {
+      .card {
+        padding: 16px 2vw 12px 2vw;
+        max-width: 99vw;
+      }
+      h2 {
+        font-size: 1.13em;
+      }
+      .professor-img {
+        width: 58px;
+        height: 58px;
+      }
+      .whatsapp-btn {
+        padding: 12px 7vw;
+        font-size: 1em;
+      }
+      .info ul {
+        font-size: 0.97em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Foto pessoal (do Google Drive, link convertido para visualização direta) -->
+    <img class="professor-img" src="https://drive.google.com/uc?export=view&id=1RMArMHv4fqvl4gCmayL7KPIEpnUg7Ljt" alt="Walter Siqueira">
+    <h2>Consultoria e Serviços WSS</h2>
+    <div class="crt">CRT: 2005105570</div>
+    <h3>Walter Siqueira</h3>
+    <div class="info">
+      <b>Soluções Técnicas:</b>
+      <ul>
+        <li>💻 <b>Aulas Particulares e Online</b></li>
+        <li>🖥️ Conserto de Computadores</li>
+        <li>📱 Conserto de Celulares</li>
+        <li>📡 Instalação de Redes</li>
+        <li>🎛️ Configuração de Alexa</li>
+        <li>🔌 Eletrodomésticos em Geral</li>
+        <li>📷 Instalação de Câmeras</li>
+        <li>🔒 Fechaduras Eletrônicas</li>
+        <li>🖨️ Instalação de Impressoras</li>
+        <li>🛠️ Manutenção de Notebooks</li>
+        <li>🗄️ Backup e Recuperação de Dados</li>
+        <li>🌐 Criação de Sites Simples</li>
+        <li>🔒 Segurança Digital Básica</li>
+        <li>📺 Instalação e manutenção de TVs</li>
+        <li>🆘 Suporte Técnico Remoto</li>
+        <li>🔄 Formatação e Upgrade</li>
+      </ul>
+    </div>
+    <a class="whatsapp-btn" href="https://wa.me/5521982069957" target="_blank" title="Fale comigo no WhatsApp">
+      <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+        <path d="M16.001 3.2a12.796 12.796 0 00-11.023 19.491L3.2 28.8l6.316-1.661A12.8 12.8 0 1016.001 3.2zm7.233 17.566c-.304.849-1.781 1.669-2.454 1.769-.627.094-1.404.133-2.267-.143-.52-.167-1.187-.384-2.035-.753-3.587-1.55-5.922-5.383-6.105-5.642-.181-.256-1.459-1.943-1.459-3.713 0-1.77.922-2.643 1.25-2.982.305-.304.678-.381.905-.381.226 0 .452.002.65.012.21.009.487-.079.763.582.304.728.969 2.509 1.053 2.692.085.181.142.397.025.637-.116.24-.176.386-.347.599-.171.213-.359.477-.513.642-.17.181-.347.377-.149.74.198.364.878 1.449 1.883 2.349 1.294 1.162 2.385 1.524 2.75 1.7.366.176.578.148.792-.088.214-.235.883-1.025 1.119-1.377.237-.351.475-.284.782-.171s2.001.945 2.35 1.117c.349.172.581.254.666.397.085.143.085.825-.219 1.674z"/>
+      </svg>
+      Fale comigo no WhatsApp<br>
+      (21) 98206-9957
+    </a>
+  </div>
+</body>
+</html>
