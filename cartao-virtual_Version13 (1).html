@@ -6,20 +6,20 @@
 <title>Cartão de Visita - WSS Consultoria e Serviços</title>
 <style>
     :root {
-        --primary: #0d1b2a;      /* Azul escuro de fundo principal */
-        --secondary: #1b263b;    /* Azul mais claro para seções */
-        --text: #e0e1dd;         /* Cinza claro para texto */
-        --highlight: #00bcd4;    /* Ciano para detalhes e títulos */
-        --button-bg: #112d4e;    /* Fundo dos botões */
-        --button-hover: #0a1f33; /* Hover do botão */
+        --primary-bg: #0f2027;      /* Fundo principal azul escuro */
+        --section-bg: #203a43;      /* Seções azul acinzentado */
+        --text-color: #e0e0e0;      /* Texto cinza claro */
+        --highlight: #00ffff;       /* Títulos em ciano */
+        --button-bg: #112d4e;       /* Botões azul escuro */
+        --button-hover: #0a1f33;    /* Hover botão azul mais intenso */
     }
 
     body {
         font-family: Arial, sans-serif;
-        background: var(--primary);
+        background: var(--primary-bg);
         margin: 0;
         padding: 20px;
-        color: var(--text);
+        color: var(--text-color);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -27,7 +27,7 @@
     }
 
     .card {
-        background: var(--secondary);
+        background: var(--section-bg);
         max-width: 520px;
         padding: 25px;
         border-radius: 15px;
@@ -52,7 +52,7 @@
     h1 {
         margin: 0;
         font-size: 2em;
-        color: var(--text);
+        color: var(--text-color);
     }
 
     h2 {
@@ -97,7 +97,7 @@
     .btn {
         display: inline-block;
         background: var(--button-bg);
-        color: var(--text);
+        color: var(--text-color);
         padding: 10px 15px;
         border-radius: 8px;
         text-decoration: none;
@@ -148,9 +148,8 @@
         <h3>🔒 Consultoria LGPD</h3>
         <ul>
             <li>Adequação à Lei Geral de Proteção de Dados</li>
-            <li>Mapeamento de dados pessoais</li>
             <li>Políticas de privacidade</li>
-            <li>Treinamento de equipes</li>
+            <li>Treinamento para viagens internacionais</li>
         </ul>
     </div>
 
@@ -201,7 +200,6 @@
         <a class="btn" href="tel:+5521982069957">📞 Ligar</a>
     </div>
 
-    <!-- QR CODE -->
     <img src="SEU-QR-CODE-AQUI.png" alt="QR Code" class="qr-code">
 
     <div class="footer">
